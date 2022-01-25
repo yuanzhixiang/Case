@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+#    driver-class-name: com.github.housepower.jdbc.ClickHouseDriver
+    url: jdbc:p6spy:clickhouse://127.0.0.1:9000/tutorial
+#    username: root
+#    password: test
