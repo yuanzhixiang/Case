@@ -12,8 +12,7 @@ CREATE TABLE IF NOT EXISTS tutorial.quant_stock_minute5_quotation
     low        Decimal(6, 2),
     high       Decimal(6, 2),
     volume     UInt32
-)
-    engine = MergeTree()
-    ORDER BY  (date)
+) engine = MergeTree()
+ORDER BY  (date);
 
 

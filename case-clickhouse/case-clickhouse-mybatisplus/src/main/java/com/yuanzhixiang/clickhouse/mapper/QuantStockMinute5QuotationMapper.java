@@ -13,4 +13,10 @@ import com.yuanzhixiang.clickhouse.po.QuantStockMinute5Quotation;
 @Mapper
 public interface QuantStockMinute5QuotationMapper extends BaseMapper<QuantStockMinute5Quotation> {
 
+    void createDatabase();
+
+    void dropTable();
+
+    void createTable();
+
 }

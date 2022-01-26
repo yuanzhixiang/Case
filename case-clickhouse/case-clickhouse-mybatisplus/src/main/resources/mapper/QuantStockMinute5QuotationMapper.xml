@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "<http://mybatis.org/dtd/mybatis-3-mapper.dtd>">
+<mapper namespace="com.yuanzhixiang.clickhouse.mapper.QuantStockMinute5QuotationMapper">
+
+    <select id="createDatabase">
+        CREATE DATABASE IF NOT EXISTS tutorial;
+    </select>
+
+    <select id="dropTable">
+        DROP TABLE tutorial.quant_stock_minute5_quotation;
+    </select>
+
+    <select id="createTable">
+        CREATE TABLE IF NOT EXISTS tutorial.quant_stock_minute5_quotation
+        (
+            symbol     String,
+            date       DateTime64(3),
+            adjustment Decimal(8, 4),
+            open       Decimal(6, 2),
+            close      Decimal(6, 2),
+            low        Decimal(6, 2),
+            high       Decimal(6, 2),
+            volume     UInt32
+        ) engine = MergeTree()
+        ORDER BY  (date);
+    </select>
+</mapper>
