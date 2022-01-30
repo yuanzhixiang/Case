@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package spendreport;
+package com.yuanzhixiang.fraud.prevention;
 
 import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.api.common.state.ValueStateDescriptor;

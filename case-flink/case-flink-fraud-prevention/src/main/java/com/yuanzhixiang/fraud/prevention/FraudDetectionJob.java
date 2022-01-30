@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package spendreport;
+package com.yuanzhixiang.fraud.prevention;
 
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
