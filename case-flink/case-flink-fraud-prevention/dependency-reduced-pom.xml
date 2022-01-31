@@ -88,7 +88,7 @@
               </filters>
               <transformers>
                 <transformer>
-                  <mainClass>com.yuanzhixiang.fraud.prevention.FraudDetectionJob</mainClass>
+                  <mainClass>com.yuanzhixiang.fraud.prevention.CustomJob</mainClass>
                 </transformer>
               </transformers>
             </configuration>
