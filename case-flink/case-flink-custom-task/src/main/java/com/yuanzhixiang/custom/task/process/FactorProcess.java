@@ -1,9 +1,10 @@
-package com.yuanzhixiang.fraud.prevention.process;
+package com.yuanzhixiang.custom.task.process;
 
 import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.util.Collector;
 
-import com.yuanzhixiang.fraud.prevention.datasource.Factor;
+import com.yuanzhixiang.custom.task.datasource.Factor;
+
 
 /**
  * @author ZhiXiang Yuan
